@@ -17,14 +17,25 @@ body{
 .encabezado a{
     color: white;
 }
-.encabezado a:hover{
-    font-size: 35px;
+.submenu a{
+    color: black;
+}
+.submenu a:hover{
+    font-size: 25px;
+    transition: 2s;
 }
 nav{
     background: linear-gradient(50deg , blue,aqua,blue);
     font-size: 20px;
     text-align: center;
     padding: 10px;
+}
+.bienvenida{
+    text-align: center;
+}
+.bienvenida img{
+    margin: 0 auto;
+    display: block;
 }
 .bienvenida h1 , p{
     margin-left: 120px;
