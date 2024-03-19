@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 'Roboto', sans-serif;
+}
+.encabezado{
+    background-color: red;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.encabezado a{
+    color: white;
+}
+.encabezado a:hover{
+    font-size: 35px;
+}
+nav{
+    background: linear-gradient(50deg , blue,aqua,blue);
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.bienvenida h1 , p{
+    margin-left: 120px;
+}
+@keyframes moverDerecha{
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    0% {
+        transform: translateX(0);
+    }
+}
+.Img-Mov{
+    animation: moverDerecha 2s infinite;
+}
+@keyframes moverArriba{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    0% {
+        transform: translateY(0);
+    }
+}
+.Img-MvDown{
+    animation: moverArriba 2s infinite;
+    z-index: 2;
+}
+.mini{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    height: 200px;
+    z-index: 1;
+}
+.mini img{
+    cursor: pointer;
+    margin: 0px 30px;
+}
+
+.personajes .S1 img {
+    position: relative;
+    border-radius: 20px;
+    float: left;
+    margin: 5px;
+}
+.personajes .S1{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 0px;
+}
